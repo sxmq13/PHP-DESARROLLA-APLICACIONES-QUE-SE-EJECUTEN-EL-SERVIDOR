@@ -1,0 +1,315 @@
+@import url('"https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Black+Ops+One&family=Dancing+Script:wght@400..700&family=Madimi+One&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Madimi+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Black+Ops+One&family=Dancing+Script:wght@400..700&family=Madimi+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap');
+:root{
+    --primary-color:#5c65c0;
+    --secundary-colo:#6f95ff;
+    --dark-color:#151515;
+    --background-color:#f6eed5c6;
+    --border-color:#413b6b;
+}
+html{
+    font-size: 62.5%;
+    font-family: 'Archivo', sans-serif;
+    background-color: var(--background-color);
+    box-sizing: border-box;
+}
+/* index parte inicial */
+.encabezado{
+    margin-top: 0;
+    margin-bottom: 0.1rem;
+    padding-top: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.encabezado-title h1{
+    background-color: var(--primary-color);
+    font-family: 'Pacifico', cursive;
+    color: var(--dark-color);
+    font-size: 5rem;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius:10%;
+}
+.encabezado-title h1 span{
+    background-color: var(--primary-color);
+    font-family: 'Pacifico', cursive;
+    color: #2a2a2a;
+    font-size: 5rem;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    border-bottom-left-radius: 10%;
+    border-bottom-right-radius:10%;
+}
+.encabezado-title h4{
+    background-color: var(--primary-color);
+    font-family: 'Montserrat', sans-serif;
+    text-align: right;
+    font-size: 1rem;
+    padding: 0;
+    border-radius: 10%;
+}
+.indicaciones{
+    background-color: var(--primary-color);
+}
+.indicaciones h2{
+    background-color: var(--primary-color);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.9rem;
+    text-align: center;
+    border-radius: 30%;
+}
+#menu{
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem;
+    margin: 20px;
+    padding: 0%;
+    list-style-type: none;
+    font-size: 1rem;
+    cursor: pointer;
+}
+#menu li{
+    font-family: 'Montserrat', sans-serif;
+    border: var(--border-color) 4.5px dashed;
+    background-color: var(--background-color);
+    margin-bottom: 0;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 40%;
+}
+#menu li :hover{
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    background-color: var(--border-color);
+    margin-bottom: 0;
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 40%;
+}
+#menu a{
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: var(--dark-color);
+    display: block;
+    border-radius: 40%;
+}
+.gallery{
+    margin-top: 25rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 30rem);
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+.gallery img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.gallery-img-3{
+    grid-column: 2/4;
+    grid-row: 1/3;
+}
+/* ejercicios */
+.table-omg{
+    border: var(--border-color) 1rem solid;
+    background-color: #413b6baf;
+    border-radius: 5%;
+    width: 300px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    color: #fff;
+}
+.table-omg td{
+    border: var(--primary-color) 0.5rem solid;
+    text-align: left;
+    background-color: #5c64c0a5;
+}
+.table-omg th{
+    border: var(--secundary-colo) 0.5rem solid;
+    background-color: #6f95ff9a;
+}
+.indicaciones-ss{
+    background-color: #5c64c0a5;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.9rem;
+    text-align: center;
+    border-radius: 5%;
+}
+.indicaciones-ss h2{
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    border-radius: 5%;
+}
+.indicaciones-ss h3{
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    text-align: justify;
+    border-radius: 5%;
+}
+.table-ejem{
+    border: var(--border-color) 1rem solid;
+    background-color: #413b6baf;
+    border-radius: 5%;
+    width: 600px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    color: #fff;
+    font-size: 2rem;
+}
+.table-ejem td{
+    border: var(--primary-color) 0.5rem solid;
+    text-align: left;
+    background-color: #5c64c0a5;
+}
+.table-ejem th{
+    border: var(--secundary-colo) 0.5rem solid;
+    background-color: #6f95ff9a;
+}
+.form{
+    text-align: center;
+    margin-top: 170rem;
+    font-size: 2rem;
+}
+.form h3{
+    font-size: 3rem;
+}
+.form input{
+    border: var(--border-color) 0.5rem solid;
+}
+.form input[type="text"]{
+    background-color: var(--background-color);
+    font-size: 1.5rem;
+}
+.form input[type="submit"]{
+    background-color: var(--primary-color);
+    border: var(--border-color) 5px dashed;
+    cursor: pointer;
+}
+.php{
+    font-size: 3rem;
+    background-color: var(--secundary-colo);
+    width: 20rem;
+}
+.table-er{
+    border: var(--border-color) 1rem solid;
+    background-color: #413b6baf;
+    border-radius: 5%;
+    width: 300px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    color: #fff;
+    font-size: 2rem;
+}
+.table-er td{
+    border: var(--primary-color) 0.5rem solid;
+    text-align: left;
+    background-color: #5c64c0a5;
+}
+.table-er th{
+    border: var(--secundary-colo) 0.5rem solid;
+    background-color: #6f95ff9a;
+}
+.forma{
+    text-align: center;
+    margin-top: 150rem;
+    font-size: 2rem;
+}
+.forma h3{
+    font-size: 3rem;
+}
+.forma input{
+    border: var(--border-color) 0.5rem solid;
+}
+.forma input[type="text"]{
+    background-color: var(--background-color);
+    font-size: 1.5rem;
+}
+.forma input[type="submit"]{
+    background-color: var(--primary-color);
+    border: var(--border-color) 5px dashed;
+    cursor: pointer;
+}
+.table-mc{
+    border: var(--border-color) 1rem solid;
+    background-color: #413b6baf;
+    border-radius: 5%;
+    width: 200px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    color: #fff;
+    font-size: 2rem;
+}
+.table-mc td{
+    border: var(--primary-color) 0.5rem solid;
+    text-align: left;
+    background-color: #5c64c0a5;
+}
+.table-mc th{
+    border: var(--secundary-colo) 0.5rem solid;
+    background-color: #6f95ff9a;
+}
+.forme{
+    text-align: center;
+    margin-top: 100rem;
+    font-size: 2rem;
+}
+.forme h3{
+    font-size: 3rem;
+}
+.forme input{
+    border: var(--border-color) 0.5rem solid;
+}
+.forme input[type="text"]{
+    background-color: var(--background-color);
+    font-size: 1.5rem;
+}
+.forme input[type="submit"]{
+    background-color: var(--primary-color);
+    border: var(--border-color) 5px dashed;
+    cursor: pointer;
+}
+.phph{
+    font-size: 3rem;
+    background-color: var(--secundary-colo);
+    width: 30rem;
+}
