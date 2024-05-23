@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css_js/style.css">
+    <script src="css_js/main.js" defer></script>
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <a href="../PagPrincipal.html" class="logo">
+            <img src="../img/bandera2.png" alt="Logo">
+        </a>
+    </header>
+    <div class="container right-panel-active">
+        <!--Sign up-->
+        <div class="container__form container--signup">
+            <form action="inciosesion/inicioSes.php" method="post" class="form">
+                <h2 class="form__title">Iniciar Sesion</h2>
+                <input type="text" name="usuarioo" placeholder="User" class="input">
+                <input type="password" name="contarseñaa" placeholder="Password" class="input">
+                <input type="submit" value="Iniciar Sesion" name="IniciarBtn" class="btn">
+            </form>
+        </div>
+        <!--Sign In-->
+        <div class="container__form container--signin">
+            <form action="registrarse/regis.php" method="post" target="_blank" class="form">
+                <h2 class="form__title">Registrarse</h2>
+                <input type="text" name="Nombree" placeholder="Nombre" class="input">
+                <input type="text" name="Correoo" placeholder="Correo" class="input">
+                <input type="text" name="Usuarioo" placeholder="User" class="input">
+                <input type="password" name="Contarseñaa" placeholder="Contraseña" class="input">
+                <input type="submit" value="Enviar" name="RegistrarseBtn" class="btn">
+            </form>
+        </div>
+        <!--Overlay-->
+        <div class="container__overlay">
+            <div class="overlay">
+                <div class="overlay__panel overlay--left">
+                    <button class="btn" id="signIn">Registrarse</button>
+                </div>
+                <div class="overlay__panel overlay--right">
+                    <button class="btn" id="signUp">Iniciar Sesion</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
